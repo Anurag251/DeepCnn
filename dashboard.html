@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+
+    <title>Deep Cnn</title>
+  </head>
+  <body>
+    <!-- dashboard-start -->
+    <div class="wrapper">
+      <div class="dashboard">
+        <div class="dashboard-side-nav">
+          <div class="top-sec">
+            <div class="nav-open-btn">
+              <div class="bars">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="logo">LOGO</div>
+          </div>
+          <button class="create">
+            <img src="./images/icons/edit/plus_circle.svg" alt="PlusIcon" />
+            Create
+          </button>
+
+          <ul>
+            <a href="index.html">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.51523 21.6389V18.4538C9.51523 17.6407 10.1792 16.9816 10.9982 16.9816H13.9921C14.3854 16.9816 14.7626 17.1367 15.0408 17.4128C15.3189 17.6889 15.4751 18.0634 15.4751 18.4538V21.6389C15.4726 21.977 15.6062 22.302 15.8461 22.5419C16.086 22.7818 16.4124 22.9167 16.7529 22.9167H18.7955C19.7495 22.9192 20.6652 22.5447 21.3406 21.8759C22.0161 21.2071 22.3957 20.299 22.3957 19.3519V10.278C22.3957 9.51302 22.0541 8.78738 21.463 8.29657L14.5144 2.7874C13.3057 1.82146 11.5739 1.85265 10.4013 2.86148L3.61131 8.29657C2.99228 8.77291 2.62229 9.5007 2.604 10.278V19.3427C2.604 21.3166 4.21586 22.9167 6.20418 22.9167H8.20014C8.90736 22.9167 9.48213 22.3503 9.48725 21.6482L9.51523 21.6389Z"
+                  />
+                </svg>
+
+                Home
+              </li>
+            </a>
+
+            <li class="active">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.1914 3.90625H19.9219C19.3825 3.90625 18.9453 3.46903 18.9453 2.92969C18.9453 2.82227 18.8574 2.73438 18.75 2.73438H6.25C6.14258 2.73438 6.05469 2.82227 6.05469 2.92969C6.05469 3.46903 5.61747 3.90625 5.07812 3.90625H3.80859C3.52369 3.90625 3.25046 4.01943 3.04901 4.22088C2.84755 4.42234 2.73438 4.69557 2.73438 4.98047V8.59375C2.73438 10.3284 3.84228 11.8083 5.38683 12.3637C5.80324 12.5134 6.14023 12.8523 6.25045 13.2808C6.81521 15.4766 8.54389 17.2056 10.7388 17.7715C11.2332 17.8989 11.6211 18.3189 11.6211 18.8295V19.5005C11.6211 20.0528 11.1734 20.5005 10.6211 20.5005H6.83594C6.40381 20.5005 6.05469 20.8496 6.05469 21.2817V22.0703C6.05469 22.1777 6.14258 22.2656 6.25 22.2656H18.75C18.8574 22.2656 18.9453 22.1777 18.9453 22.0703V21.2817C18.9453 20.8496 18.5962 20.5005 18.1641 20.5005H14.3789C13.8266 20.5005 13.3789 20.0528 13.3789 19.5005V18.8295C13.3789 18.3189 13.7668 17.8989 14.2612 17.7715C16.4561 17.2056 18.1848 15.4766 18.7495 13.2808C18.8598 12.8523 19.1968 12.5134 19.6132 12.3637C21.1577 11.8083 22.2656 10.3284 22.2656 8.59375V4.98047C22.2656 4.69557 22.1524 4.42234 21.951 4.22088C21.7495 4.01943 21.4763 3.90625 21.1914 3.90625ZM6.05469 9.36148C6.05469 10.0393 5.36374 10.4917 4.95228 9.95315C4.66369 9.57539 4.49219 9.10402 4.49219 8.59375V6.44531C4.49219 6.01384 4.84196 5.66406 5.27344 5.66406C5.70491 5.66406 6.05469 6.01384 6.05469 6.44531V9.36148ZM20.5078 8.59375C20.5078 9.1062 20.3357 9.57898 20.0461 9.95706C19.6346 10.4943 18.9453 10.0418 18.9453 9.365V6.44531C18.9453 6.01384 19.2951 5.66406 19.7266 5.66406C20.158 5.66406 20.5078 6.01384 20.5078 6.44531V8.59375Z"
+                />
+              </svg>
+
+              Project
+            </li>
+
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.8752 2.08337H3.12516C2.50016 2.08337 2.0835 2.50004 2.0835 3.12504V8.33337H22.9168V3.12504C22.9168 2.50004 22.5002 2.08337 21.8752 2.08337ZM2.0835 21.875C2.0835 22.5 2.50016 22.9167 3.12516 22.9167H11.4585V10.4167H2.0835V21.875ZM13.5418 22.9167H21.8752C22.5002 22.9167 22.9168 22.5 22.9168 21.875V10.4167H13.5418V22.9167Z"
+                />
+              </svg>
+
+              Dataset
+            </li>
+
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.4844 2.73438H3.51562C3.0835 2.73438 2.73438 3.0835 2.73438 3.51562V21.4844C2.73438 21.9165 3.0835 22.2656 3.51562 22.2656H21.4844C21.9165 22.2656 22.2656 21.9165 22.2656 21.4844V3.51562C22.2656 3.0835 21.9165 2.73438 21.4844 2.73438ZM12.5269 12.6489L7.83936 16.5796C7.7124 16.687 7.51953 16.5967 7.51953 16.4307V14.8999C7.51953 14.8438 7.54639 14.7876 7.59033 14.751L10.271 12.5L7.59033 10.249C7.56789 10.2313 7.54983 10.2086 7.53755 10.1828C7.52528 10.157 7.51911 10.1287 7.51953 10.1001V8.56934C7.51953 8.40332 7.7124 8.31299 7.83936 8.42041L12.5269 12.3486C12.6221 12.4268 12.6221 12.5708 12.5269 12.6489ZM17.4805 16.4307C17.4805 16.5381 17.3975 16.626 17.2974 16.626H12.7808C12.6807 16.626 12.5977 16.5381 12.5977 16.4307V15.2588C12.5977 15.1514 12.6807 15.0635 12.7808 15.0635H17.2974C17.3975 15.0635 17.4805 15.1514 17.4805 15.2588V16.4307Z"
+                />
+              </svg>
+
+              Code
+            </li>
+
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.22266 13.4113V12.7875L7.40977 12.7016L12.5 15.0336L24.2188 9.66523L12.5 4.29688L0.78125 9.66523L6.10547 12.1039C6.07531 12.1824 6.05918 12.2655 6.05781 12.3496V12.8777L5.12813 12.452V14.2566C5.12813 14.791 5.27148 15.2707 5.51758 15.702V19.7141C5.51758 21.0324 7.76367 21.0324 7.76367 19.7141V17.5437C12.0027 19.427 19.8715 18.3344 19.8715 14.2562V12.4516L12.5 15.8285L7.22266 13.4113ZM7.37305 19.7145C7.37305 19.8539 7.28242 19.9793 7.13945 20.0676V15.1156L7.0625 15.168V20.1102L6.83203 20.1809V15.2582L6.75586 15.2719V20.1922H6.52539V15.2719L6.44844 15.2582V20.1813L6.21875 20.1105V15.168L6.1418 15.1156V20.0676C5.99922 19.9789 5.9082 19.8539 5.9082 19.7145V15.0336C5.9082 14.5859 6.13789 14.2125 6.44844 14.0996V12.3496C6.44844 12.2305 6.50781 12.1414 6.58945 12.1043L12.4488 9.41953C12.4689 9.41004 12.4907 9.40485 12.5129 9.4043C12.6996 9.4043 12.7605 9.81445 12.5512 9.91055L6.83203 12.5301V14.0996C7.14297 14.2117 7.37305 14.5852 7.37305 15.0336V19.7145Z"
+                />
+              </svg>
+
+              Courses
+            </li>
+
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.8335 2.08228H4.16683C3.01787 2.08228 2.0835 3.01665 2.0835 4.16561V22.9156L6.25016 18.7489H20.8335C21.9825 18.7489 22.9168 17.8146 22.9168 16.6656V4.16561C22.9168 3.01665 21.9825 2.08228 20.8335 2.08228ZM14.5835 13.5406H7.29183V11.4573H14.5835V13.5406ZM17.7085 9.37394H7.29183V7.29061H17.7085V9.37394Z"
+                />
+              </svg>
+
+              Discussions
+            </li>
+          </ul>
+        </div>
+
+        <div class="dashboard-details">
+          <div class="search">
+            <form action="">
+              <div class="group">
+                <input type="text" name="" id="" placeholder="Search" />
+                <div class="icon">
+                  <img src="./images/icons/Search.svg" alt="search" />
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="profile-section">
+            <div
+              class="image"
+              style="background-image: url(./images/profile1.jpeg)"
+            ></div>
+            <div class="details">
+              <div class="info">
+                <div class="name">Naruto Uzumaki</div>
+                <h4>Joined 3 years ago · last seen a day ago</h4>
+                <div class="btn-group">
+                  <button>Follow User</button>
+                  <button>Contact User</button>
+                </div>
+              </div>
+
+              <div class="follow">
+                <div class="following">Following: <strong>100</strong></div>
+                <div class="followers">Followers: <strong>100</strong></div>
+              </div>
+            </div>
+
+            <div class="competitions">
+              <div class="icon">
+                <img src="./images/icons/Competitions_Novice.svg" alt="" />
+              </div>
+              <div class="name">Competitions Novice</div>
+            </div>
+          </div>
+
+          <ul class="nav-btns">
+            <li class="active">Home</li>
+            <li>Dataset <span>(7)</span></li>
+            <li>Code <span>(10)</span></li>
+            <li>Discussion <span>(92)</span></li>
+            <li>Followers <span>(100)</span></li>
+          </ul>
+
+          <div class="list">
+            <div class="item">
+              <div
+                class="image"
+                style="background-image: url(./images/hero_image1.jpeg)"
+              ></div>
+              <div class="details">
+                <div class="name">Competitions Novice</div>
+                <a href="#"><h4>Unranked</h4></a>
+                <h3>No completed competitions</h3>
+              </div>
+              <div class="item-footer">
+                <div class="tire">
+                  <img src="./images/icons/gold_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/platium_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/bronch_tire.svg" alt="" />
+                  0
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div
+                class="image"
+                style="background-image: url(./images/hero_image2.jpeg)"
+              ></div>
+              <div class="details">
+                <div class="name">Competitions Novice</div>
+                <a href="#"><h4>Unranked</h4></a>
+                <h3>No completed competitions</h3>
+              </div>
+              <div class="item-footer">
+                <div class="tire">
+                  <img src="./images/icons/gold_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/platium_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/bronch_tire.svg" alt="" />
+                  0
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div
+                class="image"
+                style="background-image: url(./images/hero_image3.jpeg)"
+              ></div>
+              <div class="details">
+                <div class="name">Competitions Novice</div>
+                <a href="#"><h4>Unranked</h4></a>
+                <h3>No completed competitions</h3>
+              </div>
+              <div class="item-footer">
+                <div class="tire">
+                  <img src="./images/icons/gold_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/platium_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/bronch_tire.svg" alt="" />
+                  0
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div
+                class="image"
+                style="background-image: url(./images/hero_image4.jpeg)"
+              ></div>
+              <div class="details">
+                <div class="name">Competitions Novice</div>
+                <a href="#"><h4>Unranked</h4></a>
+                <h3>No completed competitions</h3>
+              </div>
+              <div class="item-footer">
+                <div class="tire">
+                  <img src="./images/icons/gold_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/platium_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/bronch_tire.svg" alt="" />
+                  0
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div
+                class="image"
+                style="background-image: url(./images/hero_image5.jpeg)"
+              ></div>
+              <div class="details">
+                <div class="name">Competitions Novice</div>
+                <a href="#"><h4>Unranked</h4></a>
+                <h3>No completed competitions</h3>
+              </div>
+              <div class="item-footer">
+                <div class="tire">
+                  <img src="./images/icons/gold_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/platium_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/bronch_tire.svg" alt="" />
+                  0
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div
+                class="image"
+                style="background-image: url(./images/hero_image6.jpeg)"
+              ></div>
+              <div class="details">
+                <div class="name">Competitions Novice</div>
+                <a href="#"><h4>Unranked</h4></a>
+                <h3>No completed competitions</h3>
+              </div>
+              <div class="item-footer">
+                <div class="tire">
+                  <img src="./images/icons/gold_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/platium_tire.svg" alt="" />
+                  0
+                </div>
+
+                <div class="tire">
+                  <img src="./images/icons/bronch_tire.svg" alt="" />
+                  0
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- dashboard-end -->
+
+    <!-- swiper -->
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/nav.js"></script>
+  </body>
+</html>
