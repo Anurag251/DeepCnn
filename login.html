@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+
+    <title>Deep Cnn</title>
+  </head>
+  <body>
+    <div
+      class="login-page"
+      style="background-image: url(./images/page-banner.jpg)"
+    >
+      <div class="form">
+        <div class="icon">
+          <img src="./images/icons/user.svg" alt="login_icon" />
+        </div>
+        <div class="back-btn">
+          <img src="./images/icons/closeBtn.svg" alt="close" />
+        </div>
+        <form action="">
+          <h1>Login</h1>
+          <div class="group">
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" required />
+          </div>
+          <div class="group">
+            <label for="password">Password</label>
+            <input type="password" name="" id="password" />
+          </div>
+          <button>Login</button>
+          <div class="others">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox" required />
+              <label for="checkbox">Remember me</label>
+            </div>
+            <a href="#"><h3>Forgot Password?</h3></a>
+          </div>
+          <h3 class="dont-have-account">
+            Don't have an account? <a href="sign-up.html">Sign Up</a>
+          </h3>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const backBtn = document.querySelector(".back-btn");
+
+      backBtn.addEventListener("click", () => {
+        history.back();
+      });
+    </script>
+  </body>
+</html>

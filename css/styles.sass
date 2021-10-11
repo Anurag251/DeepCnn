@@ -1012,6 +1012,146 @@ footer
         padding: .8rem 2rem
         border-radius: 8px
 
+/**********   login-page   **********/
+.login-page
+  position: relative
+  height: 100vh
+  @include image()
+  width: 100%
+  @include flex($justify: center)
+  padding: 0 20px
+
+  &::after
+    content: ''
+    @include dark()
+    background-color: rgba($dark, .56)
+    z-index: 1
+  
+  .form
+    max-width: 450px
+    width: 100%
+    background-color: rgba($light, .6)
+    padding: 2rem
+    border-radius: 18px
+    position: relative
+    z-index: 2
+
+    .back-btn
+      position: absolute
+      right: 0
+      top: -33px
+      height: 30px
+      width: 30px
+      border-radius: 50%
+      background-color: rgba($light, .6)
+      @include flex($justify: center)
+      cursor: pointer
+      @include trans()
+
+      &:hover
+        transform: rotate(180deg)
+      
+      img
+        width: 70%
+
+    .icon
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, -50%)
+      height: 100px
+      width: 100px
+      border-radius: 50%
+      background-color: $main
+      @include flex($justify: center)
+      
+      img
+        width: 50%
+
+    h1
+      font-weight: 300
+      text-align: center
+      font-size: 38px
+      margin: 2.5rem 0 2rem
+
+    .wizard
+      max-width: 450px
+      overflow: hidden
+
+    .inner
+      width: 300%
+      display: flex
+
+      .groups
+        width: 33.33%
+        @include trans()
+        padding: 0 1px
+
+      .btn-group
+        @include flex($justify: space-between)
+
+        button
+          &:nth-child(1)
+            margin-right: 10px
+
+    .group
+      width: 100%
+      margin-bottom: 1.5rem
+
+      label
+        font-size: 16px
+        font-weight: 400
+        color: #4a4a4a
+
+      input
+        margin-top: 5px
+        width: 100%
+        border-radius: 10px
+        height: 50px
+        background-color: $light
+        padding: 1rem
+        font-size: 18px
+
+    button
+      @include button()
+      height: 50px
+      @include flex($justify: center)
+      padding: 0
+      text-align: center
+      width: 100%
+      text-transform: uppercase
+      border-radius: 10px
+      margin-bottom: .5rem
+
+    .others
+      @include flex($justify: space-between)
+      
+      .checkbox
+        @include flex($justify: flex-start)
+
+        input
+          margin-right: 5px
+          height: 20px
+          width: 20px
+
+        label
+          font-weight: 400
+          font-size: 16px
+      
+      h3
+        font-size: 16px
+        font-weight: 400
+        color: $dark
+      
+    .dont-have-account
+      text-align: center
+      margin-top: 2rem
+      font-size: 18px
+      font-weight: 400
+
+      a
+        color: $main
+        
 /**********   contact-page   **********/
 .dashboard
   @include grid($columns: 1fr 3.5fr)
@@ -1225,6 +1365,7 @@ footer
 
         .name
           text-align: center
+          color: $main
 
     .nav-btns
       @include flex($justify: flex-start)
@@ -1243,12 +1384,51 @@ footer
           background-color: $main
           color: $light
 
+          span
+            color: $light
+
+          &:hover
+            background-color: $main
+
         &:hover
           background-color: rgba($main, .1)
 
         span
           color: $para
           font-weight: 300
+
+    .profile-list
+      .profile
+        @include grid($columns: 80px 1fr)
+        margin-bottom: 1rem
+        width: 100%
+        border: 1px solid #bfbfbf
+        padding: 1rem
+        border-radius: 15px
+        
+        .image
+          height: 80px
+          width: 80px
+          border-radius: 50%
+          margin-right: 10px
+          @include image()
+
+        .details
+          @include flex($justify: space-between)
+
+          .name
+            font-size: 18px
+            color: $dark
+          
+          button
+            @include button()
+            border-radius: 10px
+
+            &.friend
+              border: 1px solid $para
+              box-shadow: 0 0 0 3em $light inset
+              color: $para
+              
 
     .list
       @include grid($columns: 1fr 1fr 1fr)

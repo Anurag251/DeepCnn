@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="./js/jquery.js"></script>
+
+    <title>Deep Cnn</title>
+  </head>
+  <body>
+    <div
+      class="login-page"
+      style="background-image: url(./images/page-banner.jpg)"
+    >
+      <div class="form">
+        <div class="icon">
+          <img src="./images/icons/user.svg" alt="login_icon" />
+        </div>
+        <div class="back-btn">
+          <img src="./images/icons/closeBtn.svg" alt="close" />
+        </div>
+        <form action="">
+          <h1>Sign Up</h1>
+          <div class="wizard">
+            <div class="inner">
+              <div class="groups slide-page">
+                <div class="group">
+                  <label for="fname">First Name</label>
+                  <input type="text" name="" id="fname" required />
+                </div>
+                <div class="group">
+                  <label for="lname">Last Name</label>
+                  <input type="text" name="" id="lname" required />
+                </div>
+                <button class="firstNext">Next</button>
+              </div>
+
+              <div class="groups">
+                <div class="group">
+                  <label for="email">Email</label>
+                  <input type="email" name="" id="email" required />
+                </div>
+                <div class="group">
+                  <label for="mnumber">Mobile Number</label>
+                  <input type="number" name="" id="mnumber" required />
+                </div>
+                <div class="btn-group">
+                  <button class="prev-1">Prev</button>
+                  <button class="next-1">Next</button>
+                </div>
+              </div>
+
+              <div class="groups">
+                <div class="group">
+                  <label for="password">Password</label>
+                  <input type="password" name="" id="password" required />
+                </div>
+                <div class="group">
+                  <label for="cpassword">Confirm Password</label>
+                  <input type="password" name="" id="cpassword" required />
+                </div>
+                <div class="btn-group">
+                  <button class="prev-2">Prev</button>
+                  <button type="submit">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="dont-have-account">
+            Already have an account? <a href="login.html">Login</a>
+          </h3>
+        </form>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="./js/sign-up.js"></script>
+
+    <script>
+      const backBtn = document.querySelector(".back-btn");
+
+      backBtn.addEventListener("click", () => {
+        history.back();
+      });
+    </script>
+  </body>
+</html>
