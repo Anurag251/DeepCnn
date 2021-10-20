@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="82.3429mm" height="62.4187mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3491.61 2646.76"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#3E5668;stroke-width:106.01;stroke-miterlimit:22.9256}
+    .str1 {stroke:#3E5668;stroke-width:63.6;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .str2 {stroke:#51A7F9;stroke-width:84.81;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:#FEFEFE}
+    .fil2 {fill:#3E5668}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_913962720">
+   <circle class="fil0 str0" cx="2793.5" cy="1323.38" r="645.11"/>
+   <path class="fil1 str0" d="M2253.72 1676.79l-2048.06 0c-84.07,0 -152.65,-68.57 -152.65,-152.65l0 -401.51c0,-84.08 68.57,-152.65 152.65,-152.65l2047.86 0"/>
+   <path class="fil1 str0" d="M2479.32 759.82l-2273.67 0c-84.08,0 -152.65,-68.57 -152.65,-152.65l0 -401.51c0,-84.08 68.57,-152.65 152.65,-152.65l2485.33 0c84.08,0 152.65,68.57 152.65,152.65l0 474.53"/>
+   <path class="fil1 str0" d="M2479.32 1886.94l-2273.67 0c-84.08,0 -152.65,68.57 -152.65,152.65l0 401.51c0,84.08 68.57,152.65 152.65,152.65l2485.33 0c84.08,0 152.65,-68.57 152.65,-152.65l0 -474.53"/>
+   <circle class="fil2" cx="406.49" cy="2240.35" r="78.54"/>
+   <line class="fil1 str1" x1="699.59" y1="2240.35" x2="1610.47" y2= "2240.35" />
+   <circle class="fil2" cx="406.49" cy="1323.38" r="78.54"/>
+   <line class="fil1 str1" x1="699.59" y1="1323.38" x2="1610.47" y2= "1323.38" />
+   <circle class="fil2" cx="406.49" cy="406.41" r="78.54"/>
+   <line class="fil1 str1" x1="699.59" y1="406.41" x2="1610.47" y2= "406.41" />
+   <path class="fil1 str2" d="M2799.3 963.62c130.12,0 235.6,105.48 235.6,235.6l0 436.79 -471.21 0 0 -436.79 0 0c0,-130.12 105.48,-235.6 235.6,-235.6z"/>
+   <line class="fil1 str2" x1="2563.69" y1="1321.88" x2="3034.9" y2= "1321.88" />
+  </g>
+ </g>
+</svg>

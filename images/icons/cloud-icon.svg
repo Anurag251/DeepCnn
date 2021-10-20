@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="79.7091mm" height="80.183mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3307.37 3327.03"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str4 {stroke:#3DBCB2;stroke-width:88.74;stroke-miterlimit:22.9256}
+    .str2 {stroke:#3E5668;stroke-width:88.74;stroke-miterlimit:22.9256}
+    .str3 {stroke:#3E5668;stroke-width:88.74;stroke-miterlimit:22.9256}
+    .str5 {stroke:#51A7F9;stroke-width:88.74;stroke-miterlimit:22.9256}
+    .str1 {stroke:#3E5668;stroke-width:88.74;stroke-miterlimit:22.9256}
+    .str6 {stroke:#3E5668;stroke-width:88.74;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str0 {stroke:#3E5668;stroke-width:100.84;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str7 {stroke:#3DBCB2;stroke-width:88.74;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:#51A7F9;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_915984864">
+   <path class="fil0 str0" d="M2840.75 954.19c229.86,0 416.2,186.34 416.2,416.2 0,229.86 -186.34,416.2 -416.2,416.2l-2342.11 0c-247.54,0 -448.22,-200.67 -448.22,-448.22 0,-247.54 200.68,-448.22 448.22,-448.22 52.81,0 103.47,9.16 150.52,25.93 -5.39,-36.4 -8.22,-73.63 -8.22,-111.52 0,-416.5 337.65,-754.14 754.14,-754.14 316.7,0 587.76,195.24 699.5,471.92 57.21,-19.95 118.69,-30.82 182.7,-30.82 275.16,0 503.5,200.28 547.31,463.01 5.37,-0.2 10.75,-0.34 16.16,-0.34z"/>
+   <circle class="fil0 str1" cx="547.19" cy="2745.51" r="126.28"/>
+   <circle class="fil0 str2" cx="1599.7" cy="3156.38" r="126.28"/>
+   <circle class="fil0 str3" cx="2770.04" cy="2754.41" r="126.28"/>
+   <circle class="fil0 str4" cx="2414.32" cy="3092.35" r="126.28"/>
+   <circle class="fil0 str5" cx="1044.76" cy="3099.46" r="126.28"/>
+   <polyline class="fil0 str6" points="547.19,2619.22 547.19,2135.46 808.2,1786.59 "/>
+   <g>
+    <path class="fil1" d="M1089.13 2973.18c0,24.5 -19.87,44.37 -44.37,44.37 -24.5,0 -44.37,-19.87 -44.37,-44.37l88.74 0zm0 -613.61l0 613.61 -88.74 0 0 -613.61 26.61 -40.66 62.12 40.66zm-88.74 0c0,-24.5 19.87,-44.37 44.37,-44.37 24.5,0 44.37,19.87 44.37,44.37l-88.74 0zm334.26 -78.15l-272.13 118.82 -35.51 -81.33 272.13 -118.82 62.12 40.66 -26.61 40.66zm-35.51 -81.33c22.46,-9.8 48.61,0.45 58.42,22.91 9.8,22.46 -0.45,48.61 -22.91,58.42l-35.51 -81.33zm62.12 -769.23l0 809.89 -88.74 0 0 -809.89 88.74 0zm-88.74 0c0,-24.5 19.87,-44.37 44.37,-44.37 24.5,0 44.37,19.87 44.37,44.37l-88.74 0z"/>
+   </g>
+   <polyline class="fil0 str6" points="1599.7,3030.1 1599.7,2597.9 1832.72,2427.15 1832.72,1786.59 "/>
+   <polyline class="fil0 str7" points="2414.31,2966.07 2414.31,2359.56 2152.88,2245.73 2152.88,1427.55 "/>
+   <polyline class="fil0 str6" points="2770.04,2628.12 2770.04,2160.35 2506.83,1786.59 "/>
+  </g>
+ </g>
+</svg>
