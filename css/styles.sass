@@ -541,6 +541,7 @@ footer
     position: relative
     z-index: 2
     @include flex($justify: flex-start)
+    flex-direction: column
     height: 100%
     width: 100%
 
@@ -548,6 +549,9 @@ footer
       h1
         max-width: 1200px
         margin-top: 4rem
+
+        span
+          font-size: 28px
 
     h1
       margin-top: 4rem
@@ -1240,7 +1244,7 @@ footer
       cursor: pointer
 
       &:hover
-        background-color: #0073ff
+        background-color: #3eafc0
         box-shadow: 0 2px 10px rgba($main, .7)
 
         img
