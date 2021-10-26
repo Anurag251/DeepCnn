@@ -35,6 +35,7 @@
             <a href="index.html"><li>Home</li></a>
             <a href="demo.html"><li>Demo</li></a>
             <a href="solution.html"><li>Solution</li></a>
+            <a href="video-recorder.html"><li>Recording</li></a>
             <a href="create-model.html"><li>Create Model</li></a>
             <a href="pricing.html"><li>Pricing</li></a>
             <li class="drop-down">
@@ -74,81 +75,54 @@
     >
       <div class="wrapper">
         <div class="page-title about-page-title">
-          <h1>
-            <span>Photobox Project:</span><br />
-            Innovative service for automatic search and organization of huge
-            volumes of personal photos.
-          </h1>
+          <h1>Unlock facial recognition in your applications.</h1>
         </div>
       </div>
     </div>
     <!-- page-banner-end -->
 
-    <!-- project-start -->
     <section>
       <div class="wrapper">
-        <div class="project">
-          <div class="title">
-            <div class="image">
-              <img src="./images/project.png" alt="" />
+        <div class="video-recording">
+          <div id="container">
+            <div class="video-area">
+              <video id="gum" playsinline autoplay muted></video>
+              <div class="btn-group">
+                <button id="start">
+                  <span>Record</span>
+                  <img class="dark" src="./images/icons/record.svg" alt="" />
+                  <img
+                    class="light"
+                    src="./images/icons/record-light.svg"
+                    alt=""
+                  />
+                </button>
+                <button id="record" disabled>
+                  <div class="animate"></div>
+                </button>
+                <button id="play" disabled><span></span></button>
+                <button id="download" disabled>
+                  <img src="./images/icons/download.svg" alt="" />
+                </button>
+              </div>
             </div>
-          </div>
+            <video id="recorded" playsinline loop></video>
 
-          <div class="details">
-            <div class="name">
-              Photobox: Innovative service for automatic search and organisation
-              of huge volumes of personal photos
+            <div>
+              <h4>Media Stream Constraints options</h4>
+              <p>
+                Echo cancellation:
+                <input type="checkbox" id="echoCancellation" checked />
+              </p>
             </div>
 
-            <ul class="other">
-              <li><strong>Start:</strong> 16.11.2018</li>
-              <li><strong>End:</strong> 16.11.2020</li>
-            </ul>
-
-            <p>
-              The ‘Photobox’ - Innovative service for automatic search and
-              organisation of huge volumes of personal photos is funded by the
-              European Union’s European Regional Development Fund through the
-              „Innovations and Competitiveness 2014-2020” Operational Programme.
-            </p>
-
-            <div class="name">Funding</div>
-
-            <ul class="other">
-              <li>
-                <strong>European Regional Development Fund:</strong> 361 203.94
-                BGN
-              </li>
-              <li><strong>National funding:</strong> 63 741.88 BGN</li>
-              <li><strong>Total budget:</strong> 542 093.65 BGN</li>
-            </ul>
-
-            <div class="name">Summary and main goals of the project</div>
-
-            <p>
-              The Photobox project is aimed at developing cloud-based technology
-              as a service for automatic search and organization of huge volumes
-              of personal photos. The innovative service proposed, provides a
-              unique solution worldwide for automatically recognizing, analyzing
-              and organizing personal photos, suitable for a wide range of
-              business customers, such as telcos, mobile network operators
-              (MNOs), social networks, media platforms, etc., managing very
-              large volumes of end users’ photos. The Photobox project will
-              allow Imagga Technologies Ltd, to create a customised technology
-              and solution for this use case, building upon the company’s
-              technologies for automated image categorisation, tagging and face
-              recognition and clustering.
-            </p>
-
-            <div class="name">
-              Contact: Dr Stavri Nikolov, Research Director
-              (stavri.nikolov@imagga.com)
+            <div>
+              <span id="errorMsg"></span>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- project-end -->
 
     <!-- footer-start -->
     <footer>
@@ -198,6 +172,7 @@
     <!-- footer-end -->
 
     <!-- swiper -->
+    <script src="./js/video-recorder.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/nav.js"></script>
   </body>

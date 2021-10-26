@@ -523,10 +523,11 @@ footer
 
 /**********   page-banner   **********/
 .page-banner
-  height: 400px
+  min-height: 400px
   width: 100%
   @include image()
   position: relative
+  @include flex($justify: flex-start)
 
   &::after
     content: ''
@@ -535,13 +536,15 @@ footer
     z-index: 1
 
   .wrapper
+    width: 100%
     height: 100%
 
   .page-title
     position: relative
     z-index: 2
-    @include flex($justify: flex-start)
+    @include flex($justify: center)
     flex-direction: column
+    align-items: flex-start
     height: 100%
     width: 100%
 
@@ -549,6 +552,7 @@ footer
       h1
         max-width: 1200px
         margin-top: 4rem
+        margin-bottom: 1rem
 
         span
           font-size: 28px
@@ -560,6 +564,7 @@ footer
       width: 100%
       font-weight: 400
       color: $light
+      text-align: left
 
 /**********   our-mission   **********/
 .our-mission
@@ -1643,3 +1648,193 @@ footer
       button
         @include button()
         margin-top: 2rem
+
+
+.project
+  .title
+    @include flex($justify: center)
+
+    .image
+      width: 300px
+      @include flex($justify: center)
+
+      img
+        width: 100%
+
+  .details
+    .name
+      font-size: 28px
+      margin-top: 2rem
+
+    .other
+      margin-left: 1rem
+      margin-top: .5rem
+
+      li
+        line-height: 1.6rem
+
+    p
+      margin-top: 2rem
+
+.video-recording
+  button
+    margin: 0 3px 10px 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 99px;
+
+  button:last-of-type
+    margin: 0;
+
+  p.borderBelow
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+
+  .video-area
+    --width: 25vw;
+
+    video
+      transform: rotateY(180deg)
+      border-radius: 10px
+
+    .btn-group
+      @include flex($justify: center)
+      padding: 1rem
+      width: var(--width)
+      background-color: rgba($pri, .1)
+      border-radius: 10px
+
+      button
+        height: 40px
+        width: 40px
+        border-radius: 50%
+        background-color: $light
+        box-shadow: 0 0 10px rgba($dark, .1)
+        @include flex($justify: center)
+        margin: 0 10px
+        cursor: pointer
+        
+
+        span
+          opacity: 0
+          position: absolute
+          pointer-events: none
+        
+        img
+          width: 50%
+
+        &#start
+          box-shadow: 0 0 0 0em #00b150 inset
+          transition: .4s
+
+          .dark
+            display: block
+
+          .light
+            display: none
+
+          &.active
+            box-shadow: 0 0 0 3em #00b150 inset
+
+            .dark
+              display: none
+
+            .light
+              display: block
+
+
+        &#record
+          position: relative
+
+          .animate
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            height: 20px
+            width: 20px
+            background-color: rgba($dark, .1)
+            border-radius: 50%
+            z-index: -1
+
+            &.active
+              animation: zoom .4s infinite alternate
+
+          &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            height: 85%
+            width: 85%
+            border-radius: 50%
+            background-color: #961212
+            transition: .4s
+            z-index: 2
+
+          &.active
+            &::after
+              height: 40%
+              width: 40%
+              border-radius: 4px
+
+        &#play
+          position: relative
+
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            height: 50%
+            width: 40%
+            background-color: #961212
+            clip-path: polygon(0 0, 0% 100%, 100% 50%);
+            transition: .4s
+
+          &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            height: 50%
+            width: 40%
+            background-color: #961212
+            clip-path: polygon(0 0, 0% 100%, 100% 50%);
+            transition: .4s
+
+          &.active
+            &::before
+              left: 64%
+              width: 15%
+              clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+              border-radius: 10px
+            
+            &::after
+              left: 36%
+              width: 15%
+              clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+              border-radius: 10px
+
+  @keyframes zoom 
+    from
+      transform: translate(-50%, -50%) scale(0)
+
+    to
+      transform: translate(-50%, -50%) scale(3)
+  
+
+  video
+    vertical-align: top;
+    --width: 25vw;
+    width: var(--width);
+    height: calc(var(--width) * 0.5625);
+
+  video:last-of-type
+    margin: 0 0 20px 0;
+
+  video#gumVideo
+    margin: 0 20px 20px 0;

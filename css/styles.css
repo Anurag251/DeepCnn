@@ -791,12 +791,21 @@ footer .wrapper .item ul li:hover {
 
 /**********   page-banner   **********/
 .page-banner {
-  height: 400px;
+  min-height: 400px;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-banner::after {
@@ -811,6 +820,7 @@ footer .wrapper .item ul li:hover {
 }
 
 .page-banner .wrapper {
+  width: 100%;
   height: 100%;
 }
 
@@ -820,9 +830,9 @@ footer .wrapper .item ul li:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -830,6 +840,9 @@ footer .wrapper .item ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 100%;
   width: 100%;
 }
@@ -837,6 +850,7 @@ footer .wrapper .item ul li:hover {
 .page-banner .page-title.about-page-title h1 {
   max-width: 1200px;
   margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
 .page-banner .page-title.about-page-title h1 span {
@@ -850,6 +864,7 @@ footer .wrapper .item ul li:hover {
   width: 100%;
   font-weight: 400;
   color: #FFFFFF;
+  text-align: left;
 }
 
 /**********   our-mission   **********/
@@ -2672,5 +2687,285 @@ footer .wrapper .item ul li:hover {
           box-shadow: 0 0 0 0em #4CA1AF inset;
   color: #4CA1AF;
   cursor: pointer;
+}
+
+.project .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project .title .image {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project .title .image img {
+  width: 100%;
+}
+
+.project .details .name {
+  font-size: 28px;
+  margin-top: 2rem;
+}
+
+.project .details .other {
+  margin-left: 1rem;
+  margin-top: .5rem;
+}
+
+.project .details .other li {
+  line-height: 1.6rem;
+}
+
+.project .details p {
+  margin-top: 2rem;
+}
+
+.video-recording button {
+  margin: 0 3px 10px 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 99px;
+}
+
+.video-recording button:last-of-type {
+  margin: 0;
+}
+
+.video-recording p.borderBelow {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+.video-recording .video-area {
+  --width: 25vw;
+}
+
+.video-recording .video-area video {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+.video-recording .video-area .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  width: var(--width);
+  background-color: rgba(44, 62, 80, 0.1);
+  border-radius: 10px;
+}
+
+.video-recording .video-area .btn-group button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.video-recording .video-area .btn-group button span {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.video-recording .video-area .btn-group button img {
+  width: 50%;
+}
+
+.video-recording .video-area .btn-group button#start {
+  -webkit-box-shadow: 0 0 0 0em #00b150 inset;
+          box-shadow: 0 0 0 0em #00b150 inset;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.video-recording .video-area .btn-group button#start .dark {
+  display: block;
+}
+
+.video-recording .video-area .btn-group button#start .light {
+  display: none;
+}
+
+.video-recording .video-area .btn-group button#start.active {
+  -webkit-box-shadow: 0 0 0 3em #00b150 inset;
+          box-shadow: 0 0 0 3em #00b150 inset;
+}
+
+.video-recording .video-area .btn-group button#start.active .dark {
+  display: none;
+}
+
+.video-recording .video-area .btn-group button#start.active .light {
+  display: block;
+}
+
+.video-recording .video-area .btn-group button#record {
+  position: relative;
+}
+
+.video-recording .video-area .btn-group button#record .animate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.video-recording .video-area .btn-group button#record .animate.active {
+  -webkit-animation: zoom .4s infinite alternate;
+          animation: zoom .4s infinite alternate;
+}
+
+.video-recording .video-area .btn-group button#record::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 85%;
+  width: 85%;
+  border-radius: 50%;
+  background-color: #961212;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 2;
+}
+
+.video-recording .video-area .btn-group button#record.active::after {
+  height: 40%;
+  width: 40%;
+  border-radius: 4px;
+}
+
+.video-recording .video-area .btn-group button#play {
+  position: relative;
+}
+
+.video-recording .video-area .btn-group button#play::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 50%;
+  width: 40%;
+  background-color: #961212;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.video-recording .video-area .btn-group button#play::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 50%;
+  width: 40%;
+  background-color: #961212;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.video-recording .video-area .btn-group button#play.active::before {
+  left: 64%;
+  width: 15%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  border-radius: 10px;
+}
+
+.video-recording .video-area .btn-group button#play.active::after {
+  left: 36%;
+  width: 15%;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  border-radius: 10px;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(3);
+            transform: translate(-50%, -50%) scale(3);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(3);
+            transform: translate(-50%, -50%) scale(3);
+  }
+}
+
+.video-recording video {
+  vertical-align: top;
+  --width: 25vw;
+  width: var(--width);
+  height: calc(var(--width) * 0.5625);
+}
+
+.video-recording video:last-of-type {
+  margin: 0 0 20px 0;
+}
+
+.video-recording video#gumVideo {
+  margin: 0 20px 20px 0;
 }
 /*# sourceMappingURL=styles.css.map */
