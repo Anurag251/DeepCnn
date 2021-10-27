@@ -73,6 +73,10 @@ p {
   padding: 0 20px;
 }
 
+.side-nav {
+  display: none;
+}
+
 /**********   header   **********/
 header {
   position: absolute;
@@ -253,6 +257,10 @@ header .nav-bar .nav-links button:hover {
           box-shadow: 0 0 0 0em #4CA1AF inset;
   color: #4CA1AF;
   cursor: pointer;
+}
+
+header .nav-bar .side-nav-btn {
+  display: none;
 }
 
 /**********   banner   **********/
@@ -2753,7 +2761,8 @@ footer .wrapper .item ul li:hover {
 }
 
 .video-recording .video-area {
-  --width: 25vw;
+  width: 25vw;
+  background-color: rgba(76, 161, 175, 0.2);
 }
 
 .video-recording .video-area video {
@@ -2884,54 +2893,6 @@ footer .wrapper .item ul li:hover {
   position: relative;
 }
 
-.video-recording .video-area .btn-group button#play::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 50%;
-  width: 40%;
-  background-color: #961212;
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
-          clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.video-recording .video-area .btn-group button#play::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 50%;
-  width: 40%;
-  background-color: #961212;
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
-          clip-path: polygon(0 0, 0% 100%, 100% 50%);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.video-recording .video-area .btn-group button#play.active::before {
-  left: 64%;
-  width: 15%;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-  border-radius: 10px;
-}
-
-.video-recording .video-area .btn-group button#play.active::after {
-  left: 36%;
-  width: 15%;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-  border-radius: 10px;
-}
-
 @-webkit-keyframes zoom {
   from {
     -webkit-transform: translate(-50%, -50%) scale(0);
@@ -2967,5 +2928,11 @@ footer .wrapper .item ul li:hover {
 
 .video-recording video#gumVideo {
   margin: 0 20px 20px 0;
+}
+
+.video-recording #recorded {
+  margin-top: 2rem;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
 }
 /*# sourceMappingURL=styles.css.map */

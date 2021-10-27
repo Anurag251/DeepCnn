@@ -88,8 +88,7 @@
             <div class="video-area">
               <video id="gum" playsinline autoplay muted></video>
               <div class="btn-group">
-                <button id="start">
-                  <span>Record</span>
+                <button id="start" title="open camera">
                   <img class="dark" src="./images/icons/record.svg" alt="" />
                   <img
                     class="light"
@@ -97,11 +96,14 @@
                     alt=""
                   />
                 </button>
-                <button id="record" disabled>
+                <button id="record" disabled title="start recording">
+                  <span>Record</span>
                   <div class="animate"></div>
                 </button>
-                <button id="play" disabled><span></span></button>
-                <button id="download" disabled>
+                <button id="play" disabled title="play video">
+                  <img src="./images/icons/play-btn.svg" alt="" />
+                </button>
+                <button id="download" disabled title="download video">
                   <img src="./images/icons/download.svg" alt="" />
                 </button>
               </div>

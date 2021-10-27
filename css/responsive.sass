@@ -1,0 +1,202 @@
+// $main: #096AE0
+// $pri: #3B1485
+$main: #4CA1AF
+$pri: #2C3E50
+$bg: #DDE6F2
+$light: #FFFFFF
+$dark: #000000
+$para: #525252
+
+@mixin grid($columns)
+  display: grid
+  grid-template-columns: $columns
+  grid-gap: 20px
+
+@mixin flex($justify)
+  display: flex
+  justify-content: $justify
+  align-items: center
+
+@mixin image()
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+@mixin trans()
+  transition: 0.45s cubic-bezier(0, 0, 0, 1)
+
+@mixin dark()
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+
+@mixin button()
+  padding: .6rem 1.5rem
+  font-size: 18px
+  border: 1px solid $main
+  box-shadow: 0 0 0 3em $main inset
+  color: $light
+  transition: .4s
+
+  &:hover
+    box-shadow: 0 0 0 0em $main inset
+    color: $main
+    cursor: pointer
+
+@media only screen and (max-width: 1024px)
+  header
+    .nav-bar
+      .desktop
+        display: none
+
+      .side-nav-btn
+        display: block
+        cursor: pointer
+        height: 15px
+        width: 25px
+        position: relative
+        @include flex($justify: center)
+        cursor: pointer
+
+        &.active
+          .bars
+            width: 0
+
+            &::after
+              top: 50%
+              left: 50%
+              transform: translate(-50%, -50%) rotate(45deg)
+
+            &::before
+              top: 50%
+              left: 50%
+              transform: translate(-50%, -50%) rotate(-45deg)
+
+        
+        .bars
+          height: 2px
+          width: 100%
+          background-color: $light
+          @include trans()
+
+          &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translate(-50%, -50%)
+            height: 2px
+            width: 100%
+            background-color: $light
+            @include trans()
+
+          &::before
+            content: ''
+            position: absolute
+            top: 100%
+            left: 50%
+            transform: translate(-50%, -50%)
+            height: 2px
+            width: 100%
+            background-color: $light
+            @include trans()
+
+  .side-nav
+    display: block
+    position: fixed
+    left: -330px
+    top: 0
+    height: 100%
+    width: 300px
+    background-color: $pri
+    z-index: 20
+    padding: 1rem 0
+    @include trans()
+
+    &.active
+      left: 0
+
+    .logo
+      padding: 0 1.5rem 1rem
+      @include flex($justify: space-between)
+      border-bottom: 1px solid rgba($light, .6)
+
+      .img
+        height: 50px
+        width: 50px
+        @include image()
+        background-size: contain
+
+      .side-nav-close
+        cursor: pointer
+        height: 20px
+        width: 20px
+        @include trans()
+
+        &:hover
+          transform: rotate(90deg)
+
+        img
+          width: 100%
+
+    ul
+      li
+        padding: 1.4rem 0
+        padding-left: 2rem
+        color: $light
+        font-size: 18px
+        border-bottom: 1px solid rgba($light, .6)
+    
+@media only screen and (max-width: 900px)
+  /**********   banner   **********/
+  .banner
+    .swiper-slide
+      height: 900px
+      
+    .wrapper
+      @include grid($columns: 1fr)
+
+      .details
+        grid-area: 2
+
+  /**********   application   **********/
+  .application
+    .list
+      @include grid($columns: 1fr 1fr)
+
+  /**********   detection   **********/
+  .detection
+    @include grid($columns: .5fr 1fr)
+
+    .image-list
+      grid-area: 3
+      grid-column: 1/3
+
+@media only screen and (max-width: 650px)
+  /**********   application   **********/
+  .application
+    .list
+      @include grid($columns: 1fr )
+
+@media only screen and (max-width: 700px)
+  /**********   how-we-work   **********/
+  .how-we-work
+    .list
+      @include grid($columns: 1fr)
+
+      &::before
+        left: 0
+        top: 50%
+        transform: translate(-50%) rotate(90deg)
+        height: 20px
+        width: 20px
+        background-color: $main
+        animation: arrowMove 5s ease-in-out infinite
+
+      &::after
+        left: 0
+        top: 50%
+        height: 100%
+        width: 4px

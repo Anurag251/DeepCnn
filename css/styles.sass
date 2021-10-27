@@ -98,6 +98,9 @@ p
   margin: 0 auto
   padding: 0 20px
 
+.side-nav
+  display: none
+
 /**********   header   **********/
 header
   position: absolute
@@ -122,14 +125,12 @@ header
           &:hover
             background-color: rgba($pri, .1)
 
-
   @keyframes sticky 
     from
       top: -150px
 
     to
       top: 0
-  
 
   nav
     max-width: 1300px
@@ -143,7 +144,6 @@ header
       height: 80px
       width: 120px
       @include flex($justify: center)
-      
 
       .img
         height: 90%
@@ -202,6 +202,9 @@ header
       button
         @include button()
         margin-left: 2rem
+
+    .side-nav-btn
+      display: none
 
 /**********   banner   **********/
 .banner
@@ -1649,7 +1652,6 @@ footer
         @include button()
         margin-top: 2rem
 
-
 .project
   .title
     @include flex($justify: center)
@@ -1691,7 +1693,8 @@ footer
     padding: 0 0 20px 0;
 
   .video-area
-    --width: 25vw;
+    width: 25vw;
+    background-color: rgba($main, .2)
 
     video
       transform: rotateY(180deg)
@@ -1714,7 +1717,6 @@ footer
         margin: 0 10px
         cursor: pointer
         
-
         span
           opacity: 0
           position: absolute
@@ -1741,7 +1743,6 @@ footer
 
             .light
               display: block
-
 
         &#record
           position: relative
@@ -1782,42 +1783,42 @@ footer
         &#play
           position: relative
 
-          &::before
-            content: ''
-            position: absolute
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-            height: 50%
-            width: 40%
-            background-color: #961212
-            clip-path: polygon(0 0, 0% 100%, 100% 50%);
-            transition: .4s
+          // &::before
+          //   content: ''
+          //   position: absolute
+          //   top: 50%
+          //   left: 50%
+          //   transform: translate(-50%, -50%)
+          //   height: 50%
+          //   width: 40%
+          //   background-color: #961212
+          //   clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          //   transition: .4s
 
-          &::after
-            content: ''
-            position: absolute
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
-            height: 50%
-            width: 40%
-            background-color: #961212
-            clip-path: polygon(0 0, 0% 100%, 100% 50%);
-            transition: .4s
+          // &::after
+          //   content: ''
+          //   position: absolute
+          //   top: 50%
+          //   left: 50%
+          //   transform: translate(-50%, -50%)
+          //   height: 50%
+          //   width: 40%
+          //   background-color: #961212
+          //   clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          //   transition: .4s
 
-          &.active
-            &::before
-              left: 64%
-              width: 15%
-              clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-              border-radius: 10px
+          // &.active
+          //   &::before
+          //     left: 64%
+          //     width: 15%
+          //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+          //     border-radius: 10px
             
-            &::after
-              left: 36%
-              width: 15%
-              clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-              border-radius: 10px
+          //   &::after
+          //     left: 36%
+          //     width: 15%
+          //     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+          //     border-radius: 10px
 
   @keyframes zoom 
     from
@@ -1838,3 +1839,7 @@ footer
 
   video#gumVideo
     margin: 0 20px 20px 0;
+
+  #recorded
+    margin-top: 2rem
+    transform: rotateY(-180deg)

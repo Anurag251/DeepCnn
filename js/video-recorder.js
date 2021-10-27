@@ -48,13 +48,14 @@ function handleSuccess(stream) {
 }
 
 recordButton.addEventListener("click", () => {
-  recordButton.classList.toggle("active");
   recordButtonAnimate.classList.toggle("active");
   if (recordButtonText.textContent === "Record") {
     startRecording();
+    recordButton.classList.add("active");
     console.log(recordButtonText.textContent);
   } else {
     stopRecording();
+    recordButton.classList.remove("active");
     recordButtonText.textContent = "Record";
     playButton.disabled = false;
     downloadButton.disabled = false;
@@ -63,7 +64,7 @@ recordButton.addEventListener("click", () => {
 
 function startRecording() {
   recordedBlobs = [];
-  let options = { mimeType: "video/webm;codecs=vp9,opus" };
+  let options = { mimeType: "video/mp4" }; //changed
   try {
     mediaRecorder = new MediaRecorder(window.stream, options);
   } catch (e) {
@@ -100,7 +101,7 @@ function stopRecording() {
 
 playButton.addEventListener("click", () => {
   playButton.classList.toggle("active");
-  const superBuffer = new Blob(recordedBlobs, { type: "video/webm" });
+  const superBuffer = new Blob(recordedBlobs, { type: "video/mp4" }); //changed
   recordedVideo.src = null;
   recordedVideo.srcObject = null;
   recordedVideo.src = window.URL.createObjectURL(superBuffer);
