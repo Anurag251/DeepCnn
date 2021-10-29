@@ -98,6 +98,18 @@ header.sticky {
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+header.sticky .nav-bar .side-nav-btn .bars {
+  background-color: #000000;
+}
+
+header.sticky .nav-bar .side-nav-btn .bars::after {
+  background-color: #000000;
+}
+
+header.sticky .nav-bar .side-nav-btn .bars::before {
+  background-color: #000000;
+}
+
 header.sticky .nav-bar .nav-links li {
   color: #000000;
 }
@@ -700,7 +712,7 @@ header .nav-bar .side-nav-btn {
 footer {
   background-color: #2C3E50;
   margin-top: 5rem;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 footer .wrapper {
@@ -2485,6 +2497,7 @@ footer .wrapper .item ul li:hover {
 /**********   facial-recognition   **********/
 .facial-recognition .title {
   font-size: 30px;
+  margin-bottom: 2rem;
 }
 
 .facial-recognition .details {
@@ -2710,7 +2723,8 @@ footer .wrapper .item ul li:hover {
 }
 
 .project .title .image {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2769,6 +2783,8 @@ footer .wrapper .item ul li:hover {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   border-radius: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .video-recording .video-area .btn-group {
@@ -2932,7 +2948,5 @@ footer .wrapper .item ul li:hover {
 
 .video-recording #recorded {
   margin-top: 2rem;
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
 }
 /*# sourceMappingURL=styles.css.map */

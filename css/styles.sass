@@ -118,6 +118,16 @@ header
     box-shadow: 0 4px 10px rgba($dark, .1)
 
     .nav-bar
+      .side-nav-btn
+        .bars
+          background-color: $dark
+
+          &::after
+            background-color: $dark
+
+          &::before
+            background-color: $dark
+
       .nav-links
         li
           color: $dark
@@ -469,7 +479,7 @@ header
 footer
   background-color: $pri
   margin-top: 5rem
-  padding: 3rem
+  padding: 3rem 0
 
   .wrapper
     @include grid($columns: 1fr 1fr 1fr 1fr)
@@ -1536,6 +1546,7 @@ footer
 .facial-recognition
   .title
     font-size: 30px
+    margin-bottom: 2rem
 
   .details
     @include grid($columns: 1fr 1fr)
@@ -1657,7 +1668,8 @@ footer
     @include flex($justify: center)
 
     .image
-      width: 300px
+      max-width: 300px
+      width: 100%
       @include flex($justify: center)
 
       img
@@ -1699,6 +1711,8 @@ footer
     video
       transform: rotateY(180deg)
       border-radius: 10px
+      position: relative
+      z-index: 2
 
     .btn-group
       @include flex($justify: center)
@@ -1842,4 +1856,3 @@ footer
 
   #recorded
     margin-top: 2rem
-    transform: rotateY(-180deg)
