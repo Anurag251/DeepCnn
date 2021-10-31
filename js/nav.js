@@ -20,3 +20,13 @@ sideNavClose.addEventListener("click", () => {
   sideNav.classList.remove("active");
   sideNavBtn.classList.remove("active");
 });
+
+// side-nav-dropdown
+const dropBtn = document.querySelectorAll(".drop-btn");
+const sideNavDrop = document.querySelectorAll(".side-nav-drop");
+
+dropBtn.forEach((btn, idx) => {
+  btn.addEventListener("click", () => {
+    sideNavDrop[idx].classList.toggle("active");
+  });
+});

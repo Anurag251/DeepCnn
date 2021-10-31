@@ -143,13 +143,43 @@ $para: #525252
         img
           width: 100%
 
-    ul
+    .side-link
       li
         padding: 1.4rem 0
         padding-left: 2rem
         color: $light
         font-size: 18px
         border-bottom: 1px solid rgba($light, .6)
+
+        span
+          @include flex($justify: space-between)
+       
+        &.drop-btn
+          padding-right: 1rem
+
+          .side-nav-drop
+            margin-top: 0
+            background-color: rgba($light, .1)
+            border-radius: 10px
+            max-height: 0
+            opacity: 0
+            pointer-events: none
+            @include trans()
+
+            &.active
+              margin-top: 1rem
+              max-height: 1000px
+              opacity: 1
+              pointer-events: auto
+
+            li
+              border-bottom: 1px solid $dark
+
+            a
+              &:nth-last-child(1)
+                li
+                  border-bottom: 0
+                
 
   /**********   our-mission   **********/
   .our-mission
